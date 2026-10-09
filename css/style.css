@@ -3,25 +3,38 @@
   box-sizing: border-box;
 }
 
+:root {
+  --accent: #b5563c;
+}
+
 body {
   font-family: system-ui, sans-serif;
   color: #1a1a1a;
 }
 
 header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
   padding: 1rem 2rem;
   background: #2c3e50;
   color: #fff;
 }
 
 nav {
-  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
-  margin-right: 1.5rem;
   font-size: 0.95rem;
 }
 
@@ -40,7 +53,7 @@ section {
 }
 
 section h2 {
-  border-bottom: 2px solid #2c3e50;
+  border-bottom: 2px solid var(--accent);
   padding-bottom: 0.3rem;
   margin-bottom: 1rem;
 }
@@ -68,7 +81,7 @@ section h2 {
 
 .doc-list a,
 .contact-list a {
-  color: #2c3e50;
+  color: var(--accent);
 }
 
 footer {

@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  color: #1a1a1a;
+}
+
+header {
+  padding: 1rem 2rem;
+  background: #2c3e50;
+  color: #fff;
+}
+
+main {
+  padding: 2rem;
+}
+
+footer {
+  padding: 1rem 2rem;
+  color: #777;
+  font-size: 0.9rem;
+}

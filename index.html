@@ -3,54 +3,398 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SVJ</title>
+  <title>Hana Vejvodová</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&family=Baloo+2:wght@500;600;700&family=Figtree:wght@400;500;600;700&family=Spectral:wght@500;600;700&family=Karla:wght@400;500;600;700&family=Fredoka:wght@500;600;700&family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1>SVJ</h1>
-    <nav>
-      <a href="#aktuality">Aktuality</a>
-      <a href="#dokumenty">Dokumenty</a>
-      <a href="#kontakty">Kontakty</a>
-    </nav>
+
+<div class="chrome">
+  <div class="chrome-label">Vyberte vzhled stránek — <b>Hana Vejvodová, SVJ</b></div>
+  <div class="switcher" role="group" aria-label="Výběr vzhledu">
+    <button type="button" class="var-btn active" data-variant="a">A · Profesionální</button>
+    <button type="button" class="var-btn" data-variant="b">B · Moderní</button>
+    <button type="button" class="var-btn" data-variant="c">C · Vřelá</button>
+    <button type="button" class="var-btn" data-variant="d">D · Slunečná</button>
+  </div>
+</div>
+
+<!-- ============================= VARIANTA A ============================= -->
+<div class="variant variant-a active" id="variant-a">
+  <nav class="a-nav">
+    <div class="a-wrap a-nav-inner">
+      <div>
+        <div class="a-nav-name">Hana Vejvodová</div>
+        <div class="a-nav-role">Profesionální předsedkyně SVJ</div>
+      </div>
+      <div class="a-eyebrow">Praha</div>
+    </div>
+  </nav>
+
+  <header class="a-wrap a-hero">
+    <div>
+      <div class="a-eyebrow">Správa společenství vlastníků jednotek</div>
+      <h1>Odborné a transparentní&nbsp;vedení Vašeho SVJ.</h1>
+      <p class="lead">Od organizace shromáždění po dohled nad hospodařením domu — profesionální výkon funkce předsedkyně, na kterou se výbor i vlastníci mohou spolehnout.</p>
+      <div class="a-cta-row">
+        <a class="a-btn a-btn-primary" href="#kontakt">Nezávazná poptávka</a>
+        <a class="a-btn a-btn-ghost" href="#sluzby">Co nabízím</a>
+      </div>
+    </div>
   </header>
-  <main>
-    <section id="aktuality">
-      <h2>Aktuality</h2>
-      <article class="news-item">
-        <h3>Název aktuality</h3>
-        <time>1. 1. 2026</time>
-        <p>Text aktuality.</p>
-      </article>
-    </section>
 
-    <section id="dokumenty">
-      <h2>Dokumenty</h2>
-      <ul class="doc-list">
-        <li><a href="docs/stanovy.pdf">Stanovy SVJ</a></li>
-        <li><a href="docs/zapis-schuze.pdf">Zápis ze schůze</a></li>
-      </ul>
-    </section>
+  <section class="a-section a-about" id="o-mne">
+    <div class="a-wrap">
+      <h2>O mně</h2>
+      <p>Vedení domu je především o důvěře, pořádku a znalosti zákona. Specializuji se na profesionální výkon funkce předsedkyně SVJ — zastupuji společenství při jednáních, dohlížím na hospodaření a zajišťuji, aby chod domu odpovídal platné legislativě.</p>
+      <p>Mým cílem je, aby výbor i jednotliví vlastníci měli jistotu, že se o jejich dům stará odborník, který věci řeší včas a bez zbytečných komplikací.</p>
+    </div>
+  </section>
 
-    <section id="kontakty">
-      <h2>Kontakty</h2>
-      <ul class="contact-list">
-        <li>
-          <strong>Předseda výboru</strong><br>
-          Jméno Příjmení<br>
-          <a href="mailto:predseda@example.cz">predseda@example.cz</a>
-        </li>
-        <li>
-          <strong>Správce domu</strong><br>
-          Jméno Příjmení<br>
-          <a href="mailto:spravce@example.cz">spravce@example.cz</a>
-        </li>
-      </ul>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2026 SVJ</p>
+  <section class="a-section" id="sluzby">
+    <div class="a-wrap">
+      <h2>Co nabízím</h2>
+      <div class="a-services">
+        <div class="a-service"><div class="a-service-bar"></div><div><h3>Vedení shromáždění vlastníků</h3><p>Příprava podkladů, program jednání i zápisy podle stanov.</p></div></div>
+        <div class="a-service"><div class="a-service-bar"></div><div><h3>Jednání s dodavateli a správci</h3><p>Výběr a kontrola dodavatelů, správcovských firem a řemeslníků.</p></div></div>
+        <div class="a-service"><div class="a-service-bar"></div><div><h3>Kontrola hospodaření</h3><p>Dohled nad účetnictvím, fondem oprav a čerpáním rozpočtu.</p></div></div>
+        <div class="a-service"><div class="a-service-bar"></div><div><h3>Soulad s legislativou</h3><p>Stanovy, zákon o vlastnictví bytů a navazující předpisy.</p></div></div>
+        <div class="a-service"><div class="a-service-bar"></div><div><h3>Řešení sporů mezi vlastníky</h3><p>Mediace a jednání směřující k funkční shodě ve společenství.</p></div></div>
+        <div class="a-service"><div class="a-service-bar"></div><div><h3>Krizové řízení</h3><p>Havárie, rekonstrukce a pojistné události řešené bez prodlení.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="a-section" id="zkusenosti">
+    <div class="a-wrap">
+      <h2>Zkušenosti</h2>
+      <div class="a-stats">
+        <div class="a-stat"><div class="num">[X] let</div><div class="cap">praxe ve vedení SVJ</div></div>
+        <div class="a-stat"><div class="num">[X]</div><div class="cap">spravovaných domů</div></div>
+        <div class="a-stat"><div class="num">[X]</div><div class="cap">bytových jednotek celkem</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="a-section" id="kontakt">
+    <div class="a-wrap">
+      <h2>Kontakt</h2>
+      <div class="a-contact">
+        <div class="a-contact-info">
+          <p>Nezávazně proberu rozsah spolupráce a situaci Vašeho domu.</p>
+          <p>E-mail: <a href="#">hana.vejvodova@example.cz</a><br>Telefon: <a href="#">+420 XXX XXX XXX</a></p>
+        </div>
+        <form onsubmit="return false">
+          <div class="a-field"><label for="a-name">Jméno</label><input id="a-name" type="text"></div>
+          <div class="a-field"><label for="a-email">E-mail</label><input id="a-email" type="email"></div>
+          <div class="a-field"><label for="a-msg">Zpráva</label><textarea id="a-msg"></textarea></div>
+          <button class="a-btn a-btn-primary" type="submit">Odeslat poptávku</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="a-footer">
+    <div class="a-wrap">© 2026 Hana Vejvodová</div>
   </footer>
+</div>
+
+<!-- ============================= VARIANTA B ============================= -->
+<div class="variant variant-b" id="variant-b">
+  <nav class="b-wrap">
+    <div class="b-nav-inner">
+      <div class="b-nav-name">Hana Vejvodová</div>
+      <span class="b-pill">Předsedkyně SVJ</span>
+    </div>
+  </nav>
+
+  <header class="b-hero">
+    <div class="b-blob" aria-hidden="true"></div>
+    <div class="b-wrap b-hero-inner">
+      <span class="b-pill">Pro výbory SVJ</span>
+      <h1>Správa vašeho domu v dobrých rukách.</h1>
+      <p class="lead">Vím, že vedení domu umí zabrat spoustu času a nervů. Ráda převezmu starosti, ať řešíte schůzi, smlouvu s dodavatelem nebo spor mezi sousedy.</p>
+      <div class="b-cta-row">
+        <a class="b-btn b-btn-primary" href="#b-kontakt">Napsat mi</a>
+        <a class="b-btn b-btn-ghost" href="#b-sluzby">Co pro vás udělám</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="b-section" id="b-o-mne">
+    <div class="b-wrap">
+      <h2>O mně</h2>
+      <div class="b-about-card">
+        <p>Specializuji se na profesionální výkon funkce předsedkyně SVJ — od schůzí a papírování po jednání s dodavateli. Cílem je, aby dům fungoval hladce a výbor nemusel řešit vše sám.</p>
+        <p>Ať už váš dům hledá předsedkyni poprvé, nebo chcete věci jen zpřehlednit — ozvěte se, probereme to.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="b-section" id="b-sluzby">
+    <div class="b-wrap">
+      <h2>Co pro vás udělám</h2>
+      <div class="b-services">
+        <div class="b-service">
+          <div class="b-icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="16" y1="3" x2="16" y2="7"/></svg></div>
+          <h3>Vedení shromáždění</h3>
+          <p>Program, zápis, hlasování — bez zmatků.</p>
+        </div>
+        <div class="b-service">
+          <div class="b-icon"><svg viewBox="0 0 24 24"><circle cx="8" cy="9" r="3"/><circle cx="16" cy="9" r="3"/><path d="M3 20c0-3 2.5-5 5-5s5 2 5 5"/><path d="M11 20c0-3 2.5-5 5-5s5 2 5 5"/></svg></div>
+          <h3>Jednání s dodavateli</h3>
+          <p>Správci, řemeslníci, smlouvy pod kontrolou.</p>
+        </div>
+        <div class="b-service">
+          <div class="b-icon"><svg viewBox="0 0 24 24"><path d="M4 19V5a1 1 0 0 1 1-1h11l4 4v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1Z"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg></div>
+          <h3>Kontrola hospodaření</h3>
+          <p>Fond oprav a účetnictví přehledně.</p>
+        </div>
+        <div class="b-service">
+          <div class="b-icon"><svg viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M5 7h14"/><path d="M5 7 2 13a3 3 0 0 0 6 0Z"/><path d="M19 7l-3 6a3 3 0 0 0 6 0Z"/></svg></div>
+          <h3>Soulad se zákonem</h3>
+          <p>Stanovy a legislativa v pořádku.</p>
+        </div>
+        <div class="b-service">
+          <div class="b-icon"><svg viewBox="0 0 24 24"><path d="M8 3 5 6l3 3"/><path d="M16 21l3-3-3-3"/><path d="M5 6h9a5 5 0 0 1 5 5v1"/><path d="M19 18h-9a5 5 0 0 1-5-5v-1"/></svg></div>
+          <h3>Řešení sporů</h3>
+          <p>Klidné jednání mezi sousedy.</p>
+        </div>
+        <div class="b-service">
+          <div class="b-icon"><svg viewBox="0 0 24 24"><path d="M12 2 2 20h20Z"/><line x1="12" y1="10" x2="12" y2="14"/><circle cx="12" cy="17" r="0.6" fill="#1f5c53" stroke="none"/></svg></div>
+          <h3>Krizové řízení</h3>
+          <p>Havárie a pojistné události hned.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="b-section" id="b-zkusenosti">
+    <div class="b-wrap">
+      <h2>Zkušenosti</h2>
+      <div class="b-stats">
+        <div class="b-stat"><div class="num">[X] let</div><div class="cap">praxe ve vedení SVJ</div></div>
+        <div class="b-stat"><div class="num">[X]</div><div class="cap">spravovaných domů</div></div>
+        <div class="b-stat"><div class="num">[X]</div><div class="cap">bytových jednotek</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="b-section" id="b-kontakt">
+    <div class="b-wrap">
+      <h2>Spojte se se mnou</h2>
+      <div class="b-contact-card">
+        <div class="b-contact-info">
+          <p>Napište mi pár vět o vašem domě — ozvu se zpátky s návrhem, jak můžu pomoct.</p>
+          <p>E-mail: <a href="#">hana.vejvodova@example.cz</a><br>Telefon: <a href="#">+420 XXX XXX XXX</a></p>
+        </div>
+        <form onsubmit="return false">
+          <div class="b-field"><label for="b-name">Jméno</label><input id="b-name" type="text"></div>
+          <div class="b-field"><label for="b-email">E-mail</label><input id="b-email" type="email"></div>
+          <div class="b-field"><label for="b-msg">Zpráva</label><textarea id="b-msg"></textarea></div>
+          <button class="b-btn b-btn-primary" type="submit">Odeslat zprávu</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="b-footer">
+    <div class="b-wrap">© 2026 Hana Vejvodová</div>
+  </footer>
+</div>
+
+<!-- ============================= VARIANTA C ============================= -->
+<div class="variant variant-c" id="variant-c">
+  <nav class="c-wrap">
+    <div class="c-nav-inner">
+      <div class="c-nav-name">Hana Vejvodová</div>
+      <div class="c-eyebrow">Předsedkyně SVJ</div>
+    </div>
+  </nav>
+
+  <header class="c-hero">
+    <div class="c-hero-text">
+      <div class="c-eyebrow">Správa domu s lidským přístupem</div>
+      <h1>Váš dům si zaslouží péči, ne jen správu.</h1>
+      <p class="lead">Pomáhám výborům SVJ fungovat klidně a bez zbytečných tahanic — od schůzí po jednání s dodavateli, vždy s citem pro lidi, kteří v domě žijí.</p>
+      <div class="c-cta-row">
+        <a class="c-btn c-btn-primary" href="#c-kontakt">Napsat mi</a>
+        <a class="c-btn c-btn-ghost" href="#c-sluzby">Co nabízím</a>
+      </div>
+    </div>
+    <div class="c-hero-stat">
+      <div class="num">[X] let</div>
+      <div class="cap">praxe ve vedení SVJ</div>
+    </div>
+  </header>
+
+  <section class="c-section c-about" id="c-o-mne">
+    <div class="c-wrap">
+      <h2>O mně</h2>
+      <p>Vedení domu je pro mě především o lidech — o tom, aby se vlastníci cítili vyslyšeni a věděli, že se o jejich domov někdo stará se zájmem, ne jen podle paragrafu.</p>
+      <p>Zároveň vím, že bez pořádku v papírech a hospodaření to nejde — proto spojuji osobní přístup s důslednou administrativou.</p>
+    </div>
+  </section>
+
+  <section class="c-section" id="c-sluzby">
+    <div class="c-wrap">
+      <h2>Co nabízím</h2>
+      <div class="c-services">
+        <div class="c-service">
+          <div class="c-medallion"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="16" y1="3" x2="16" y2="7"/></svg></div>
+          <div><h3>Vedení shromáždění vlastníků</h3><p>Příprava podkladů, program jednání i zápisy podle stanov.</p></div>
+        </div>
+        <div class="c-service">
+          <div class="c-medallion"><svg viewBox="0 0 24 24"><circle cx="8" cy="9" r="3"/><circle cx="16" cy="9" r="3"/><path d="M3 20c0-3 2.5-5 5-5s5 2 5 5"/><path d="M11 20c0-3 2.5-5 5-5s5 2 5 5"/></svg></div>
+          <div><h3>Jednání s dodavateli a správci</h3><p>Výběr a kontrola dodavatelů, správcovských firem a řemeslníků.</p></div>
+        </div>
+        <div class="c-service">
+          <div class="c-medallion"><svg viewBox="0 0 24 24"><path d="M4 19V5a1 1 0 0 1 1-1h11l4 4v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1Z"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg></div>
+          <div><h3>Kontrola hospodaření</h3><p>Dohled nad účetnictvím, fondem oprav a čerpáním rozpočtu.</p></div>
+        </div>
+        <div class="c-service">
+          <div class="c-medallion"><svg viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M5 7h14"/><path d="M5 7 2 13a3 3 0 0 0 6 0Z"/><path d="M19 7l-3 6a3 3 0 0 0 6 0Z"/></svg></div>
+          <div><h3>Soulad s legislativou</h3><p>Stanovy, zákon o vlastnictví bytů a navazující předpisy.</p></div>
+        </div>
+        <div class="c-service">
+          <div class="c-medallion"><svg viewBox="0 0 24 24"><path d="M8 3 5 6l3 3"/><path d="M16 21l3-3-3-3"/><path d="M5 6h9a5 5 0 0 1 5 5v1"/><path d="M19 18h-9a5 5 0 0 1-5-5v-1"/></svg></div>
+          <div><h3>Řešení sporů mezi vlastníky</h3><p>Mediace a jednání směřující k funkční shodě ve společenství.</p></div>
+        </div>
+        <div class="c-service">
+          <div class="c-medallion"><svg viewBox="0 0 24 24"><path d="M12 2 2 20h20Z"/><line x1="12" y1="10" x2="12" y2="14"/></svg></div>
+          <div><h3>Krizové řízení</h3><p>Havárie, rekonstrukce a pojistné události řešené bez prodlení.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="c-section" id="c-zkusenosti">
+    <div class="c-wrap">
+      <h2>Zkušenosti</h2>
+      <div class="c-stats">
+        <div class="c-stat"><div class="num">[X]</div><div class="cap">spravovaných domů</div></div>
+        <div class="c-stat"><div class="num">[X]</div><div class="cap">bytových jednotek celkem</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="c-section" id="c-kontakt">
+    <div class="c-wrap">
+      <h2>Kontakt</h2>
+      <div class="c-contact">
+        <div class="c-contact-info">
+          <p>Napište mi pár vět o vašem domě — ozvu se s návrhem, jak můžu pomoct.</p>
+          <p>E-mail: <a href="#">hana.vejvodova@example.cz</a><br>Telefon: <a href="#">+420 XXX XXX XXX</a></p>
+        </div>
+        <form onsubmit="return false">
+          <div class="c-field"><label for="c-name">Jméno</label><input id="c-name" type="text"></div>
+          <div class="c-field"><label for="c-email">E-mail</label><input id="c-email" type="email"></div>
+          <div class="c-field"><label for="c-msg">Zpráva</label><textarea id="c-msg"></textarea></div>
+          <button class="c-btn c-btn-primary" type="submit">Odeslat zprávu</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="c-footer">
+    <div class="c-wrap">© 2026 Hana Vejvodová</div>
+  </footer>
+</div>
+
+<!-- ============================= VARIANTA D ============================= -->
+<div class="variant variant-d" id="variant-d">
+  <nav class="d-wrap">
+    <div class="d-nav-inner">
+      <div class="d-nav-name">Hana Vejvodová</div>
+      <span class="d-pill">Předsedkyně SVJ</span>
+    </div>
+  </nav>
+
+  <header class="d-hero">
+    <div class="d-sun" aria-hidden="true"><span class="ring1"></span><span class="ring2"></span></div>
+    <div class="d-wrap d-hero-inner">
+      <span class="d-pill">Pro výbory SVJ</span>
+      <h1>Ať je ve vašem domě pohoda.</h1>
+      <p class="lead">Starosti s domem nechte na mně — schůze, dodavatele i papírování zvládnu tak, aby vám zbyl čas na věci, které máte rádi.</p>
+      <div class="d-cta-row">
+        <a class="d-btn d-btn-primary" href="#d-kontakt">Napsat mi</a>
+        <a class="d-btn d-btn-ghost" href="#d-sluzby">Co pro vás udělám</a>
+      </div>
+    </div>
+    <svg class="d-wave" viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,20 C150,45 350,-5 500,20 S850,45 1000,20" fill="none" stroke="#f2a93c" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+  </header>
+
+  <section class="d-section" id="d-o-mne">
+    <div class="d-wrap d-about">
+      <h2>O mně</h2>
+      <p>Vím, že vedení domu umí zabrat spoustu času a nervů. Ráda převezmu starosti, ať řešíte schůzi, smlouvu s dodavatelem nebo spor mezi sousedy — s úsměvem a bez zbytečného dramatu.</p>
+    </div>
+  </section>
+
+  <section class="d-section" id="d-sluzby">
+    <div class="d-wrap">
+      <h2>Co pro vás udělám</h2>
+      <div class="d-services">
+        <div class="d-service"><h3>Vedení shromáždění</h3><p>Program, zápis, hlasování — bez zmatků.</p></div>
+        <div class="d-service"><h3>Jednání s dodavateli</h3><p>Správci, řemeslníci, smlouvy pod kontrolou.</p></div>
+        <div class="d-service"><h3>Kontrola hospodaření</h3><p>Fond oprav a účetnictví přehledně.</p></div>
+        <div class="d-service"><h3>Soulad se zákonem</h3><p>Stanovy a legislativa v pořádku.</p></div>
+        <div class="d-service"><h3>Řešení sporů</h3><p>Klidné jednání mezi sousedy.</p></div>
+        <div class="d-service"><h3>Krizové řízení</h3><p>Havárie a pojistné události hned.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="d-section" id="d-zkusenosti">
+    <div class="d-wrap">
+      <h2>Zkušenosti</h2>
+      <div class="d-stats">
+        <div class="d-stat"><div class="num">[X] let</div><div class="cap">praxe ve vedení SVJ</div></div>
+        <div class="d-stat"><div class="num">[X]</div><div class="cap">spravovaných domů</div></div>
+        <div class="d-stat"><div class="num">[X]</div><div class="cap">bytových jednotek</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="d-section" id="d-kontakt">
+    <div class="d-wrap">
+      <h2>Spojte se se mnou</h2>
+      <div class="d-contact-card">
+        <p>Napište mi pár vět o vašem domě — ozvu se zpátky s návrhem, jak můžu pomoct.</p>
+        <p>E-mail: <a href="#">hana.vejvodova@example.cz</a><br>Telefon: <a href="#">+420 XXX XXX XXX</a></p>
+        <form onsubmit="return false">
+          <div class="d-field"><label for="d-name">Jméno</label><input id="d-name" type="text"></div>
+          <div class="d-field"><label for="d-email">E-mail</label><input id="d-email" type="email"></div>
+          <div class="d-field"><label for="d-msg">Zpráva</label><textarea id="d-msg"></textarea></div>
+          <button class="d-btn d-btn-primary" type="submit">Odeslat zprávu</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="d-footer">
+    <div class="d-wrap">© 2026 Hana Vejvodová</div>
+  </footer>
+</div>
+
+<script>
+  (function(){
+    var buttons = document.querySelectorAll('.var-btn');
+    var letters = ['a','b','c','d'];
+    buttons.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var target = btn.getAttribute('data-variant');
+        buttons.forEach(function(b){ b.classList.toggle('active', b === btn); });
+        letters.forEach(function(letter){
+          document.getElementById('variant-' + letter).classList.toggle('active', target === letter);
+        });
+      });
+    });
+  })();
+</script>
 </body>
 </html>
